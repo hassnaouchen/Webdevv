@@ -93,9 +93,10 @@ function vect(x,y){
 
 };
 vect.prototype.module=function(){
-
+return Math.sqrt(this.x*this.x+this.y*this.y);
 }
 vect.prototype.egale=function(v){
+	return (this.x==v.x && this.y==v.y);
 	
 }
 let v1=new vect(2,4);

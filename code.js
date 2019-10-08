@@ -54,27 +54,61 @@ let s=x+y;
 // }
 // console.log(rep);
 ///////////////////////// POO
-let personne ={
-	nom : "yhyaoui",
-	age : 20,
-	direHi : function() {
-		console.log("Hi");
-	}
+// let personne ={
+// 	nom : "yhyaoui",
+// 	age : 20,
+// 	direHi : function() {
+// 		console.log("Hi");
+// 	}
 	
 
+// }
+// function user(a,b){
+// 		this.nom=a;
+// 		this.age=b;
+// 		this.direHi = function(){
+// 			console.log("Hi");
+// 		}
+// 	}
+// personne.taille=30;
+// a="age";
+// personne[a];
+// let p=new user("souad",20);
+// console.log(personne);
+// console.log(user);
+// console.log(p.nom);
+// user.prototype.taille=30;
+// class Ligne{
+// 	constructor(nom,longueur){
+// 		this.nom=nom;
+// 		this.longueur=longueur;
+// 	}
+// 	taille(){
+// 		console.log();
+// 	}
+// }
+function vect(x,y){
+	this.x=x;
+	this.y=y;
+
+};
+vect.prototype.module=function(){
+
 }
-function user(a,b){
-		this.nom=a;
-		this.age=b;
-		this.direHi = function(){
-			console.log("Hi");
-		}
-	}
-personne.taille=30;
-a="age";
-personne[a];
-let p=new user("souad",20);
-console.log(personne);
-console.log(user);
-console.log(p.nom);
-user.prototype.taille=30;
+vect.prototype.egale=function(v){
+	
+}
+let v1=new vect(2,4);
+let v2=new vect(3,4);
+console.log (v1.module());
+console.log(v2.module());
+console.log(v1.egale(v2));
+
+
+
+
+
+
+
+
+

@@ -36,20 +36,45 @@ let s=x+y;
 // }
 // f(2,1);
 
+//////// CALCULATRICE
+// let nbr1=prompt("Entrer le premier nombre : ");
+// let operation=prompt("Entrer l operation : ");
+// let nbr2=prompt("Entrer le deuxieme nombre : ");
 
-let nbr1=prompt("Entrer le premier nombre : ");
-let operation=prompt("Entrer l operation : ");
-let nbr2=prompt("Entrer le deuxieme nombre : ");
+// nbr1=Number.parseInt(nbr1);
+// nbr2=Number.parseInt(nbr2);
+// let rep;
+// switch (operation)
+// {
+// 	case "+" :rep=nbr1+nbr2 ;break;
+// 	case "-" : rep=(nbr1-nbr2);break;
+// 	case "*": rep=(nbr1*nbr2);break;
+// 	case "/": rep=(nbr1/nbr2);break;
+// 	default : rep=("echec d'operation ");
+// }
+// console.log(rep);
+///////////////////////// POO
+let personne ={
+	nom : "yhyaoui",
+	age : 20,
+	direHi : function() {
+		console.log("Hi");
+	}
+	
 
-nbr1=Number.parseInt(nbr1);
-nbr2=Number.parseInt(nbr2);
-let rep;
-switch (operation)
-{
-	case "+" :rep=nbr1+nbr2 ;break;
-	case "-" : rep=(nbr1-nbr2);break;
-	case "*": rep=(nbr1*nbr2);break;
-	case "/": rep=(nbr1/nbr2);break;
-	default : rep=("echec d'operation ");
 }
-console.log(rep);
+function user(a,b){
+		this.nom=a;
+		this.age=b;
+		this.direHi = function(){
+			console.log("Hi");
+		}
+	}
+personne.taille=30;
+a="age";
+personne[a];
+let p=new user("souad",20);
+console.log(personne);
+console.log(user);
+console.log(p.nom);
+user.prototype.taille=30;

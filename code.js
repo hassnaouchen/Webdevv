@@ -105,7 +105,7 @@ let s=x+y;
 // console.log(v2.module());
 // console.log(v1.egale(v2));
 
-class vect{
+/*class vect{
 
 	constructor(x, y) {
     this.x = x;
@@ -123,12 +123,36 @@ egale(v){
 let v1=new vect(2,4);
 let v2=new vect(3,4);
 console.log (v1.module());
-console.log(v2.module());
+console.log(v2.module-());
 console.log(v1.egale(v2));
 
+let prenoms =["yasser",'adnane','anans','hiba'];
+let ages=[29,27,29,30];
+
+//les objets array
+
+var tab1 = [42,12,6,3] ;
+var tab2 = [42,"blue",12,"blanc"];
+alert(tab1[0]);
+var tab3= new array('blanc','blue','red');*/
+
+//tp2 DOM 
+var query = document.querySelector('#menu .item span'),
+queryAll =document.querySelectorAll('#menu .item span');
+
+/*alert(query.innerHTML);
+alert(queryAll.length);
+
+alert(queryAll[0].innerHTML+' - '+queryAll[1].innerHTML);*/
 
 
 
+/*console.log(query.id);
+console.log(query.className);
+console.log(query.atributes);
+console.log(query.outerHTML);
+console.log(query.innerHTML);
+console.log(query.clientHight);*/
 
 
 

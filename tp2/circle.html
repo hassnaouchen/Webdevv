@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circle</title>
+	<style type="text/css">
+		.body{
+			width: 5000px;
+			height :5000px;
+
+		}
+		.cercle{
+			position:absolute;
+			top:1px;
+			background-color: none;
+			width: 100px;
+			height: 100px;
+			border: 2px solid red;	
+			border-radius: 50%;
+				}
+	</style>
+</head>
+<body class="body">
+
+<div class="cercle">
+	
+<script type="text/javascript">
+
+	const c = document.querySelector(".cercle");
+
+	console.log(c);
+	console.log(c.style.top);
+	console.log(c.style.left);
+
+ function eventclick(e)
+ {
+ 	console.log("moved");
+ 	var x=e.clientX-25;
+ 	var y=e.clientY-25;
+ 	c.style.left = x+"px";
+ 	c.style.top = y+"px";
+ 	console.log(x,y);
+ 	return [x,y];
+
+ }
+ function event(e)
+ {
+ 	console.log("moved");
+ 	var w=window.innerWidth;
+ 	var h=window.innerHeight;
+
+ 	var x=w-(e.clientX-25);
+ 	var y=h-(e.clientY-25);
+ 	
+ 	c.style.left = x+"px";
+ 	c.style.top = y+"px";
+ 	console.log(x,y);
+ 	return [x,y];
+
+ }
+
+  function mouseEnterColor(e)
+ {
+ 	c.style.backgroundColor='red';
+ 	c.style.borderColor='black';
+
+ }
+ function mouseLeaveColor(e)
+ {
+ 	c.removeAttribute("style");
+
+
+ }
+ 		const b = document.querySelector("body");
+		b.addEventListener("mousemove",event,false);
+
+		c.addEventListener("mouseover",mouseEnterColor,false);
+		c.addEventListener("mouseleave",mouseLeaveColor,false);
+
+
+
+
+</script>
+</div>
+</body>
+</html>

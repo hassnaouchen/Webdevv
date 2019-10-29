@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 1</title>
+	<style type="text/css">
+		body{
+			width:	8000px;
+			height:8000px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+
+</body>
+<script type="text/javascript">
+	function randomHsl() {
+    return 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1)';
+}
+
+const b = document.querySelector("body");
+	function changeColor(e)
+	{
+		console.log("colors are changed");
+		b.style.backgroundColor= randomHsl();
+
+	}
+
+	b.addEventListener("mousemove",changeColor);
+</script>
+</html>
